@@ -38,20 +38,20 @@ Example:
 
 ## 存储的文本内容格式说明
 
-Sentence-[sentence-Index, word-Num]: I like playing football.
-True-Label:positive
-Predict-Label:positve
-Predict-Prob:[negative-0.3,positive-0.7]
-Word-[word-Index]-I: Embedding Input:[0.1,0.2,...,0.6]
-Word-[word-Index]-I: Hidden State:[0.2,0.6,...,0.8]
-Word-[word-Index]-I: Output :[0.3,0.7]
-...
-
-******************************************************************
-Sentence-[sentence-Index, word-Num]:
-...
-...
-...
+> Sentence-[sentence-Index, word-Num]: I like playing football.
+> True-Label:positive
+> Predict-Label:positve
+> Predict-Prob:[negative-0.3,positive-0.7]
+> Word-[word-Index]-I: Embedding Input:[0.1,0.2,...,0.6]
+> Word-[word-Index]-I: Hidden State:[0.2,0.6,...,0.8]
+> Word-[word-Index]-I: Output :[0.3,0.7]
+> ...
+> 
+> ******************************************************************
+> Sentence-[sentence-Index, word-Num]:
+> ...
+> ...
+> ...
 
 ------
 

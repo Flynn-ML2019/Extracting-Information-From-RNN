@@ -11,7 +11,7 @@ class DefaultConfig(object):
     model_used="gru"
     bidirectional = False #是否采用双向lstm
     lr =0.01 #学习速率
-    use_gpu = True
+    use_gpu = False
     labels = 2 #标签个数
     num_epochs = 50 #迭代次数  一次迭代所有训练数据             
     batch_size_train=48 #喂入数据的batch_size

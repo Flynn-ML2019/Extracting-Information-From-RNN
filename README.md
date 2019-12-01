@@ -64,4 +64,7 @@ Answer:在config.py中修改use_gpu = True即可</br>
 Question:我如何开始训练模型?</br>
 Answer:在pytorch.py中打开#train()的注释并给test()加上注释，测试同理</br>
 
+Question:有训练好的模型吗?</br>
+Answer:有，提供一个GRU放在model_pytorch_gru下</br>
+
 

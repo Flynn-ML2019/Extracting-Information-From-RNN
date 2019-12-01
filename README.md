@@ -26,9 +26,7 @@ model_pytorch_lstm：LSTM存储模型的目录</br>
 
 
 ## 实现流程
-Example:
-&nbsp; &nbsp; &nbsp; &nbsp;词嵌入&nbsp; &nbsp;LSMT/GRU</br>
-> * 一个句子：I am a student----->Input Vector-------->Result(Classification probability)
+> * 对于某一个句子：如I am a student--(词嵌入)--->Input Vector---(LSTM/GRU)----->Result(Classification probability)
 
 
 ## 输出文件说明
@@ -56,13 +54,13 @@ Sentence-[sentence-Index, word-Num]:</br>
 
 
 ## 程序运行相关的问题
-Question:我如何指定使用LSTM或是GRU?
-Answer:在config.py中修改model_used="gru"
+Question:我如何指定使用LSTM或是GRU?</br>
+Answer:在config.py中修改model_used="gru"</br>
 
-Question:我如何指定使用GRU?
-Answer:在config.py中修改use_gpu = True即可
+Question:我如何指定使用GRU?</br>
+Answer:在config.py中修改use_gpu = True即可</br>
 
-Question:我如何开始训练模型?
-Answer:在pytorch.py中打开#train()的注释并给test()加上注释，测试同理
+Question:我如何开始训练模型?</br>
+Answer:在pytorch.py中打开#train()的注释并给test()加上注释，测试同理</br>
 
 

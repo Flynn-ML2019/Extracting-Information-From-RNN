@@ -17,14 +17,14 @@
 ------
 
 ## 代码文件说明
-> * all.npy：存储好的IMDB电影数据集5W条(正[1,25000]/负[25001,50000]各2.5w条)
-> * wordVectors.npy：训练好的词向量，40w词，一个词50维
-> * word_to_index.txt：词嵌入中每个词的下标与词的对应关系，如 0->i,1->am,2->a,3->student...
-> * config.py：模型参数配置文件
-> * pytorch.py：模型主要实现
-> * tool.py：工具类
-> * model_pytorch_gru：GRU存储模型的目录
-> * model_pytorch_lstm：LSTM存储模型的目录
+all.npy：存储好的IMDB电影数据集5W条(正[1,25000]/负[25001,50000]各2.5w条)</br>
+wordVectors.npy：训练好的词向量，40w词，一个词50维</br>
+word_to_index.txt：词嵌入中每个词的下标与词的对应关系，如 0->i,1->am,2->a,3->student...</br>
+config.py：模型参数配置文件</br>
+pytorch.py：模型主要实现</br>
+tool.py：工具类</br>
+model_pytorch_gru：GRU存储模型的目录</br>
+model_pytorch_lstm：LSTM存储模型的目录</br>
 
 
 ------

@@ -7,14 +7,12 @@
 > * 1.模型训练集的准确率为90%左右，测试集80%左右
 > * 2.抽取每句话的Input Vector,Hidden Vector和Output存为指定格式的文本文件
 
-------
 
 ## 运行环境及配置
 > * 1.Linux/macOS/Windows
 > * 2.Python3
 > * 3.Pytorch
 
-------
 
 ## 代码文件说明
 all.npy：存储好的IMDB电影数据集5W条(正[1,25000]/负[25001,50000]各2.5w条)</br>
@@ -27,39 +25,35 @@ model_pytorch_gru：GRU存储模型的目录</br>
 model_pytorch_lstm：LSTM存储模型的目录</br>
 
 
-------
-
 ## 实现流程
 Example:
 > *                      词嵌入             LSMT/GRU
 > * 一个句子：I am a student----->Input Vector-------->Result(Classification probability)
 
-------
 
 ## 输出文件说明
 ```python
 在项目目录下生成pytorch_input_hidden_result_lstm(或gru).txt
 ```
-------
+
 
 ## 输出的文本内容格式说明
 
-> *Sentence-[sentence-Index, word-Num]: I like playing football.
-> *True-Label:positive
-> *Predict-Label:positve
-> *Predict-Prob:[negative-0.3,positive-0.7]
-> *Word-[word-Index]-I: Embedding Input:[0.1,0.2,...,0.6]
-> *Word-[word-Index]-I: Hidden State:[0.2,0.6,...,0.8]
-> *Word-[word-Index]-I: Output :[0.3,0.7]
-> *...
-> *
-> *******************************************************************
-> *Sentence-[sentence-Index, word-Num]:
-> *...
-> *...
-> *...
+Sentence-[sentence-Index, word-Num]: I like playing football.</br>
+True-Label:positive</br>
+Predict-Label:positve</br>
+Predict-Prob:[negative-0.3,positive-0.7]</br>
+Word-[word-Index]-I: Embedding Input:[0.1,0.2,...,0.6]</br>
+Word-[word-Index]-I: Hidden State:[0.2,0.6,...,0.8]</br>
+Word-[word-Index]-I: Output :[0.3,0.7]</br>
+...</br>
+</br>
+*******************************************************************</br>
+Sentence-[sentence-Index, word-Num]:</br>
+...</br>
+...</br>
+...</br>
 
-------
 
 ## 程序运行相关
 选用lstm并使用GPU:定位到配置文件config.py:根据需求修改model_used="gru",use_gpu = True即可

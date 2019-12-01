@@ -124,8 +124,9 @@ def train(): #训练
             feature = Variable(feature)
             label = Variable(label)
             score = net(feature,label,"train")
-            #feature=feature.cuda()
-            #label=label.cuda()
+            if opt.use_gpu:
+                feature=feature.cuda()
+                label=label.cuda()
             loss = loss_function(score,torch.max(label, 1)[1])
             loss.backward()
             optimizer.step()
@@ -144,8 +145,9 @@ def train(): #训练
                 m=m+1
                 feature = Variable(feature)
                 label = Variable(label)
-                #feature=feature.cuda()
-                #label=label.cuda()
+                if opt.use_gpu:
+                    feature=feature.cuda()
+                    label=label.cuda()
                 score = net(feature,label,"test")
                 train = accuracy_score(torch.argmax(score.cpu().data,
                                                                  dim=1), torch.max(label, 1)[1].cpu())
@@ -169,8 +171,9 @@ def test(): #测试
         net_trained.zero_grad()
         feature = Variable(feature)
         label = Variable(label)
-        #feature=feature.cuda()
-        #label=label.cuda()
+        if opt.use_gpu:
+            feature=feature.cuda()
+            label=label.cuda()
         score = net_trained(feature,label,"test")
         train = accuracy_score(torch.argmax(score.cpu().data,
                                                  dim=1), torch.max(label, 1)[1].cpu())

@@ -27,7 +27,7 @@ model_pytorch_lstm：LSTM存储模型的目录</br>
 
 ## 实现流程
 Example:
-> *                      词嵌入             LSMT/GRU
+                          词嵌入             LSMT/GRU</br>
 > * 一个句子：I am a student----->Input Vector-------->Result(Classification probability)
 
 

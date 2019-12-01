@@ -3,10 +3,11 @@
 ------
 
 简介：该项目是在IMDB电影数据集上的二分类模型，主要功能如下：
-```python
-1.模型训练集的准确率为90%左右，测试集80%左右
-2.抽取每句话的Input Vector,Hidden Vector和Output存为指定格式的文本文件
-```
+
+1.实现了分类模型，该模型训练集的准确率为90%左右，测试集80%左右</br>
+2.抽取每句话的Input Vector(维度：50),Hidden Vector(维度：10)和Output(维度：2)存为指定格式的文本文件</br>
+3.用户可以自由指定相应的RNN模型，支持LSTM/GRU
+
 
 ## 运行环境及配置
 > * 1.Linux/macOS/Windows

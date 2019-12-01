@@ -16,7 +16,7 @@
 
 ------
 
-## 代码及文件说明
+## 代码文件说明
 > * all.npy：存储好的IMDB电影数据集5W条(正[1,25000]/负[25001,50000]各2.5w条)
 > * wordVectors.npy：训练好的词向量，40w词，一个词50维
 > * word_to_index.txt：词嵌入中每个词的下标与词的对应关系，如 0->i,1->am,2->a,3->student...
@@ -36,29 +36,29 @@ Example:
 
 ------
 
-## 存储的文本内容格式说明
-
-> Sentence-[sentence-Index, word-Num]: I like playing football.
-> True-Label:positive
-> Predict-Label:positve
-> Predict-Prob:[negative-0.3,positive-0.7]
-> Word-[word-Index]-I: Embedding Input:[0.1,0.2,...,0.6]
-> Word-[word-Index]-I: Hidden State:[0.2,0.6,...,0.8]
-> Word-[word-Index]-I: Output :[0.3,0.7]
-> ...
-> 
-> ******************************************************************
-> Sentence-[sentence-Index, word-Num]:
-> ...
-> ...
-> ...
-
+## 输出文件说明
+```python
+在项目目录下生成pytorch_input_hidden_result_lstm(或gru).txt
+```
 ------
 
-## 输出说明
-```python
-在项目目录下生成pytorch_input_hidden_result_lstm.txt
-```
+## 输出的文本内容格式说明
+
+> *Sentence-[sentence-Index, word-Num]: I like playing football.
+> *True-Label:positive
+> *Predict-Label:positve
+> *Predict-Prob:[negative-0.3,positive-0.7]
+> *Word-[word-Index]-I: Embedding Input:[0.1,0.2,...,0.6]
+> *Word-[word-Index]-I: Hidden State:[0.2,0.6,...,0.8]
+> *Word-[word-Index]-I: Output :[0.3,0.7]
+> *...
+> *
+> *******************************************************************
+> *Sentence-[sentence-Index, word-Num]:
+> *...
+> *...
+> *...
+
 ------
 
 ## 程序运行相关

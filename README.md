@@ -27,7 +27,7 @@ model_pytorch_lstm：LSTM存储模型的目录</br>
 
 
 ## 实现流程
-> * 对于某一个句子：如I am a student--(词嵌入)--->Input Vector---(抽取Hidden值)----->Result(Classification probability)
+> * 对某个句子：如I am a student--(词嵌入)--->Input Vector---(抽取Hidden值)----->Result(Classification probability)
 
 
 ## 输出文件说明

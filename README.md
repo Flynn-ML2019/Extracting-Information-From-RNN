@@ -10,9 +10,8 @@
 
 
 ## 运行环境及配置
-> * 1.Linux/macOS/Windows
-> * 2.Python3
-> * 3.Pytorch
+> * 1.Python3
+> * 2.Pytorch
 
 
 ## 代码文件说明

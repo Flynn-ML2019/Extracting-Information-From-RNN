@@ -1,4 +1,4 @@
-# rnn_project
+# An implementation of extracting information from RNN
 
 ------
 

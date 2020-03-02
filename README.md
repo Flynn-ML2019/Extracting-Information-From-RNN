@@ -70,5 +70,5 @@ Question:有训练好的模型吗?</br>
 Answer:有，提供一个GRU放在model_pytorch_gru下</br>
 
 If you think it will help you, you can give me a star,thinks...  
-last:any question call me at 942042627@qq.com  
+last:any question send to 942042627@qq.com  
 

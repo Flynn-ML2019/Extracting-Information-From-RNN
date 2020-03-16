@@ -69,6 +69,3 @@ Answer:在pytorch.py中打开#train()的注释并给test()加上注释，测试�
 Question:有训练好的模型吗?</br>
 Answer:有，提供一个GRU放在model_pytorch_gru下</br>
 
-If you think it will help you, you can give me a star,thinks...  
-last:any question send to 942042627@qq.com  
-
